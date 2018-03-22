@@ -1,0 +1,30 @@
+{
+  "name": "redux-cac",
+  "version": "0.1.0",
+  "description": "Helper for create action creators",
+  "main": "dist/index.js",
+  "author": "Alex Maslakov",
+  "keywords": [
+    "redux",
+    "action",
+    "creators"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --semi false --write src/*.js",
+    "bundle": "rollup -i src/index.js -o dist/index.js -m -f umd -n ultradomRedux",
+    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.57.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.2",
+    "prettier": "^1.11.1"
+  }
+}
