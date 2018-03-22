@@ -13,7 +13,7 @@
   "scripts": {
     "format": "prettier --semi false --write src/*.js",
     "bundle": "rollup -i src/index.js -o dist/index.js -m -f umd -n ultradomRedux",
-    "release": "npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm run bundle && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
   "files": [
     "dist"
