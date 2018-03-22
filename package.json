@@ -1,6 +1,6 @@
 {
   "name": "redux-cac",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Helper for create action creators",
   "main": "dist/index.js",
   "author": "Alex Maslakov",
